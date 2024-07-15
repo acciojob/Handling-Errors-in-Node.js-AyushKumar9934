@@ -5,7 +5,7 @@ const server=http.createServer((req,res)=>{
   console.log("request recieved by server");
  
 })
-let filePath="./output.txt"
+let filePath = "./output.txt"
 function printFileContents(filePath) {
   // TODO: Use fs.readFile to read the file contents
  fs.readFile(filePath,'utf-8',(err,data)=>{
