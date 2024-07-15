@@ -5,12 +5,12 @@ const server=http.createServer((req,res)=>{
   console.log("request recieved by server");
  
 })
-let filePath = process.argv[2];
+let filePath="./output.txt"
 function printFileContents(filePath) {
   // TODO: Use fs.readFile to read the file contents
  fs.readFile(filePath,'utf-8',(err,data)=>{
   if(err){
-    console.log(`Column ${columnName} not found in the CSV.`)
+    console.log(`Column ${filePath} not found in the CSV.`)
   }
   else{
     console.log(data);
