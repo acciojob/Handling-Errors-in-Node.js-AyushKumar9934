@@ -12,7 +12,8 @@ function printFileContents(filePath) {
   if(err){
     console.log(`Column ${filePath} not found in the CSV.`)
   }
-  else{
+  else{ 
+     
     console.log(data);
   }
  })
